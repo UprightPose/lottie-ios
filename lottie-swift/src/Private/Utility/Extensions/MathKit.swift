@@ -431,16 +431,16 @@ extension CGPoint: Interpolatable {
         }
         continue
       }
-      if accurateDistance < point.distance {
-        closestPoint = closestPoint - 1
-        point = points[closestPoint]
-        pointAmount = CGFloat(closestPoint) * step
-        nextPointAmount = pointAmount + step
-        if closestPoint < 0 {
-          foundPoint = true
-        }
-        continue
-      }
+//      if accurateDistance < point.distance {
+//        closestPoint = closestPoint - 1
+//        point = points[closestPoint]
+//        pointAmount = CGFloat(closestPoint) * step
+//        nextPointAmount = pointAmount + step
+//        if closestPoint < 0 {
+//          foundPoint = true
+//        }
+//        continue
+//      }
       
       /// Now we are certain the point is the closest point under the distance
       let pointDiff = nextPoint.distance - point.distance
